@@ -1,0 +1,324 @@
+{
+    "install!": {
+        "prefix": "install!",
+        "body": [
+            "install! "
+        ],
+        "description": "install!",
+        "scope": ".podfile"
+    },
+    "cocoapods": {
+        "prefix": "cocoapods",
+        "body": [
+            "'cocoapods',\n"
+        ],
+        "description": "cocoapods",
+        "scope": ".podfile"
+    },
+    "cleanTrue": {
+        "prefix": "cleanTrue",
+        "body": [
+            ":clean => true,\n"
+        ],
+        "description": ":clean  => true",
+        "scope": ".podfile"
+    },
+    "clean": {
+        "prefix": "clean",
+        "body": [
+            ":clean => ${1:falseOrTrue},\n"
+        ],
+        "description": ":clean  => falseOrTrue",
+        "scope": ".podfile"
+    },
+    "deduplicate_targets": {
+        "prefix": "deduplicate_targets",
+        "body": [
+            ":deduplicate_targets => ${1:falseOrTrue},\n"
+        ],
+        "description": ":deduplicate_targets  => falseOrTrue",
+        "scope": ".podfile"
+    },
+    "deterministic_uuids": {
+        "prefix": "deterministic_uuids",
+        "body": [
+            ":deterministic_uuids => ${1:falseOrTrue},\n"
+        ],
+        "description": ":deterministic_uuids  => falseOrTrue",
+        "scope": ".podfile"
+    },
+    "integrate_targets": {
+        "prefix": "integrate_targets",
+        "body": [
+            ":integrate_targets => ${1:falseOrTrue},\n"
+        ],
+        "description": ":integrate_targets  => falseOrTrue",
+        "scope": ".podfile"
+    },
+    "lock_pod_sources": {
+        "prefix": "lock_pod_sources",
+        "body": [
+            ":lock_pod_sources => ${1:falseOrTrue},\n"
+        ],
+        "description": ":lock_pod_sources  => falseOrTrue",
+        "scope": ".podfile"
+    },
+    "share_schemes_for_development_pods": {
+        "prefix": "share_schemes_for_development_pods",
+        "body": [
+            ":share_schemes_for_development_pods => ${1:falseOrTrue},\n"
+        ],
+        "description": ":share_schemes_for_development_pods  => falseOrTrue",
+        "scope": ".podfile"
+    },
+    "pod": {
+        "prefix": "pod",
+        "body": [
+            "pod '${1:Objection}', '~$2'"
+        ],
+        "description": "Pod 'Objection'",
+        "scope": ".podfile"
+    },
+    "podVersion": {
+        "prefix": "podVersion",
+        "body": [
+            "pod '${1:Objection}', '${2:version}'"
+        ],
+        "description": "Pod 'Objection', 'version'",
+        "scope": ".podfile"
+    },
+    "podConfig": {
+        "prefix": "podConfig",
+        "body": [
+            "pod '${1:Objection}', :configuration => '${2:config}'\n"
+        ],
+        "description": "pod 'Objection', :configuration => 'config'",
+        "scope": ".podfile"
+    },
+    "podConfigs": {
+        "prefix": "podConfigs",
+        "body": [
+            "pod '${1:Objection}', :configurations => ['${2:config}', '${3:...}']\n"
+        ],
+        "description": "pod 'Objection', :configurations => ['config', '...']",
+        "scope": ".podfile"
+    },
+    "podSubspecs": {
+        "prefix": "podSubspecs",
+        "body": [
+            "pod '${1:Objection}', :subspecs => ['${2:subspecs}', '${3:...}']\n"
+        ],
+        "description": "pod 'Objection', :subspecs => ['subspecs','...']",
+        "scope": ".podfile"
+    },
+    "podPath": {
+        "prefix": "podPath",
+        "body": [
+            "pod '${1:Objection}', :path => '${2:path}'\n"
+        ],
+        "description": "pod 'Objection', :path => 'path'",
+        "scope": ".podfile"
+    },
+    "podGit": {
+        "prefix": "podGit",
+        "body": [
+            "pod '${1:Objection}', :git => '${2:git}'\n"
+        ],
+        "description": "pod 'Objection', :git => 'git'",
+        "scope": ".podfile"
+    },
+    "podGitBranch": {
+        "prefix": "podGitBranch",
+        "body": [
+            "pod '${1:Objection}', :git => '${2:git}', :branch => '${3:branch}'\n"
+        ],
+        "description": "pod 'Objection', :git => 'git', :branch => 'branch'",
+        "scope": ".podfile"
+    },
+    "podGitTag": {
+        "prefix": "podGitTag",
+        "body": [
+            "pod '${1:Objection}', :git => '${2:git}', :tag => '${3:tag}'\n"
+        ],
+        "description": "pod 'Objection', :git => 'git', :tag => 'tag'",
+        "scope": ".podfile"
+    },
+    "podGitCommit": {
+        "prefix": "podGitCommit",
+        "body": [
+            "pod '${1:Objection}', :git => '${2:git}', :commit => '${3:commit}'\n"
+        ],
+        "description": "pod 'Objection', :git => 'git', :commit => 'commit'",
+        "scope": ".podfile"
+    },
+    "podPodspec": {
+        "prefix": "podPodspec",
+        "body": [
+            "pod '${1:Objection}', ${2:podspec}\n"
+        ],
+        "description": "pod 'Objection', podspec",
+        "scope": ".podfile"
+    },
+    "podspecName": {
+        "prefix": "podspecName",
+        "body": [
+            "podspec :name => '${1:podspecName}'\n"
+        ],
+        "description": "podspec :name => 'podspecName'",
+        "scope": ".podfile"
+    },
+    "podspecPath": {
+        "prefix": "podspecPath",
+        "body": [
+            "podspec :path => '${1:podspecPath}'\n"
+        ],
+        "description": "podspec :path => 'podspecPath'",
+        "scope": ".podfile"
+    },
+    "target": {
+        "prefix": "target",
+        "body": [
+            "target '${1:targetName}' do \n$0\nend\n"
+        ],
+        "description": "target 'targetName' do … end",
+        "scope": ".podfile"
+    },
+    "abstract_target": {
+        "prefix": "abstract_target",
+        "body": [
+            "abstract_target '${1:targetName}' do \n$0\nend\n"
+        ],
+        "description": "abstract_target 'targetName' do … end",
+        "scope": ".podfile"
+    },
+    "inheritSearchPaths": {
+        "prefix": "inheritSearchPaths",
+        "body": [
+            "inherit! :search_paths\n"
+        ],
+        "description": "inherit! :search_paths",
+        "scope": ".podfile"
+    },
+    "inheritComplete": {
+        "prefix": "inheritComplete",
+        "body": [
+            "inherit! :complete\n"
+        ],
+        "description": "inherit! :complete",
+        "scope": ".podfile"
+    },
+    "inheritNone": {
+        "prefix": "inheritNone",
+        "body": [
+            "inherit! :none\n"
+        ],
+        "description": "inherit! :none",
+        "scope": ".podfile"
+    },
+    "project": {
+        "prefix": "project",
+        "body": [
+            "project '${1:projectName}'\n"
+        ],
+        "description": "project 'projectName'",
+        "scope": ".podfile"
+    },
+    "projectReaseDebugLinkPath": {
+        "prefix": "projectReaseDebugLinkPath",
+        "body": [
+            "project '${1:projectName}', '${2:releaseLinkpath}' => :release, '${3:debugLinkPath}' => debug\n"
+        ],
+        "description": "project 'projectName', 'releaseLinkpath' => :release, 'debugLinkPath' => :debug",
+        "scope": ".podfile"
+    },
+    "inhibit_all_warnings": {
+        "prefix": "inhibit_all_warnings",
+        "body": [
+            "inhibit_all_warnings!\n"
+        ],
+        "description": "inhibit_all_warnings!",
+        "scope": ".podfile"
+    },
+    "inhibit_warningsTrue": {
+        "prefix": "inhibit_warningsTrue",
+        "body": [
+            ":inhibit_warnings => true\n"
+        ],
+        "description": ":inhibit_warnings => true",
+        "scope": ".podfile"
+    },
+    "inhibit_warningsFalse": {
+        "prefix": "inhibit_warningsFalse",
+        "body": [
+            ":inhibit_warnings => false\n"
+        ],
+        "description": ":inhibit_warnings => false",
+        "scope": ".podfile"
+    },
+    "use_frameworks": {
+        "prefix": "use_frameworks",
+        "body": [
+            "use_frameworks!\n"
+        ],
+        "description": "use_frameworks!",
+        "scope": ".podfile"
+    },
+    "workspace": {
+        "prefix": "workspace",
+        "body": [
+            "workspace '${1:workspaceName}'\n"
+        ],
+        "description": "workspace 'workspaceName'",
+        "scope": ".podfile"
+    },
+    "generate_bridge_support": {
+        "prefix": "generate_bridge_support",
+        "body": [
+            "generate_bridge_support!\n"
+        ],
+        "description": "generate_bridge_support!",
+        "scope": ".podfile"
+    },
+    "set_arc_compatibility_flag": {
+        "prefix": "set_arc_compatibility_flag",
+        "body": [
+            "set_arc_compatibility_flag!\n"
+        ],
+        "description": "set_arc_compatibility_flag!",
+        "scope": ".podfile"
+    },
+    "source": {
+        "prefix": "source",
+        "body": [
+            "source '${1:source}'\n"
+        ],
+        "description": "source 'source'",
+        "scope": ".podfile"
+    },
+    "plugin": {
+        "prefix": "plugin",
+        "body": [
+            "plugin '${1:plugin}'\n"
+        ],
+        "description": "plugin 'plugin'",
+        "scope": ".podfile"
+    },
+    "pre_install": {
+        "prefix": "pre_install",
+        "description": "pre_install  do |installer|… end",
+        "body": [
+            "pre_install do |${1:installer}|",
+            "$0",
+            "end"
+        ],
+        "scope": ".podfile"
+    },
+    "post_install": {
+        "prefix": "post_install",
+        "body": [
+            "post_install do |${1:installer}|\n$0\nend\n"
+        ],
+        "description": "post_install  do |installer|… end",
+        "scope": ".podfile"
+    }
+}

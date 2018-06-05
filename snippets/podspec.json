@@ -1,0 +1,602 @@
+{
+    "PodSpecNew": {
+        "prefix": "PodSpecNew",
+        "body": [
+            "Pod :: Spec.new do |${1:variable}|\n\t$0\nend"
+        ],
+        "description": "Pod :: Spec.new do |variable| … end",
+        "scope": ".podspec"
+    },
+    "name": {
+        "prefix": "name",
+        "body": [
+            "name = '${1:name}'\n"
+        ],
+        "description": "name = 'name'",
+        "scope": ".podspec"
+    },
+    "version": {
+        "prefix": "version",
+        "body": [
+            "version = '${1:version}'\n"
+        ],
+        "description": "version = 'version'",
+        "scope": ".podspec"
+    },
+    "cocoapods_version": {
+        "prefix": "cocoapods_version",
+        "body": [
+            "cocoapods_version = '${1:cocoapods_version}'\n"
+        ],
+        "description": "cocoapods_version = 'cocoapods_version'",
+        "scope": ".podspec"
+    },
+    "authors": {
+        "prefix": "authors",
+        "body": [
+            "authors = '${1:authors}'\n"
+        ],
+        "description": "authors = 'authors'",
+        "scope": ".podspec"
+    },
+    "authorsWithEmail": {
+        "prefix": "authorsWithEmail",
+        "body": [
+            "authors = {'${1:authorsName}' => '${2:authorsEmail}'}\n"
+        ],
+        "description": "authors = {'authorsName' => 'authorsEmail'}",
+        "scope": ".podspec"
+    },
+    "authorsEmail": {
+        "prefix": "authorsEmail",
+        "body": [
+            "'${1:authorsName}' => '${2:authorsEmail}'\n"
+        ],
+        "description": "'authorsName' => 'authorsEmail'",
+        "scope": ".podspec"
+    },
+    "social_media_url": {
+        "prefix": "social_media_url",
+        "body": [
+            "social_media_url = '${1:social_media_url}'\n"
+        ],
+        "description": "social_media_url = 'social_media_url'",
+        "scope": ".podspec"
+    },
+    "license": {
+        "prefix": "license",
+        "body": [
+            "license = '${1:license}'\n'"
+        ],
+        "description": "license = 'license'",
+        "scope": ".podspec"
+    },
+    "licenseType": {
+        "prefix": "licenseType",
+        "body": [
+            "license = { :type => '${1:license}'}\n"
+        ],
+        "description": "license = { :type => 'licenseType'}",
+        "scope": ".podspec"
+    },
+    "licenseTypeFile": {
+        "prefix": "licenseTypeFile",
+        "body": [
+            "license = { :type => '${1:licenseType}', :file => '${2:licenseFile}'}\n"
+        ],
+        "description": "license = { :type => 'licenseType', :file => 'licenseFile'}",
+        "scope": ".podspec"
+    },
+    "licenseTypeText": {
+        "prefix": "licenseTypeText",
+        "body": [
+            "license = { :type => '${1:licenseType}', :text => <<-LICENSE\n${2:licenseText}\nLICENSE\n}\n"
+        ],
+        "description": "license = { :type => 'licenseType', :text => <<-LICENSE licenseText LICENSE}",
+        "scope": ".podspec"
+    },
+    "homepage": {
+        "prefix": "homepage",
+        "body": [
+            "homepage = '${1:homepage}'\n"
+        ],
+        "description": "homepage = 'homepage'",
+        "scope": ".podspec"
+    },
+    "sourceGitTag": {
+        "prefix": "sourceGitTag",
+        "body": [
+            "source = { :git => '${1:gitPath}', :tag => '${2:gitTag}'}\n"
+        ],
+        "description": "source = { :git => 'gitPath', :tag => 'gitTag'}",
+        "scope": ".podspec"
+    },
+    "sourceGit": {
+        "prefix": "sourceGit",
+        "body": [
+            "source = {\t:git => '${1:gitPath}',\n\t\t\t:tag => '${2:gitTag}',\n\t\t\t:branch => '${3:gitBranch}',\n\t\t\t:commit => '${4:gitCommit}',\n\t\t\t:submodules => '${5:gitSubmodules}'}\n"
+        ],
+        "description": "source = { :git => 'gitPath', :tag => 'gitTag', :branch => 'gitBranch', :commit => 'gitCommit', :submodules => 'gitSubmodules'}",
+        "scope": ".podspec"
+    },
+    "sourceSVN": {
+        "prefix": "sourceSVN",
+        "body": [
+            "source = {\t:svn => '${1:svnPath}',\n\t\t\t:folder => '${2:svnFolder}',\n\t\t\t:tag => '${3:svnTag}',\n\t\t\t:revision => '${4:svnRevision}'}\n'"
+        ],
+        "description": "source = { :svn => 'svnPath', :folder => 'svnFolder', :tag => 'svnTag', :revision => 'svnRevision'}",
+        "scope": ".podspec"
+    },
+    "sourceHG": {
+        "prefix": "sourceHG",
+        "body": [
+            "source = {\t:hg => '${1:hgPath}',\n\t\t\t:revision => '${2:hgRevision}'}\n"
+        ],
+        "description": "source = { :hg => 'hgPath', :revision => 'hgRevision'}",
+        "scope": ".podspec"
+    },
+    "sourceHTTP": {
+        "prefix": "sourceHTTP",
+        "body": [
+            "source = {\t:http => '${1:httpPath}',\n\t\t\t:flatten => '${2:httpFlatten}',\n\t\t\t:type => '${3:httpType}',\n\t\t\t:sha256 => '${4:httpSha256}',\n\t\t\t:sha1 => '${5:httpSha1}'}\n"
+        ],
+        "description": "source = { :http => 'httpPath', :flatten => 'httpFlatten', :type => 'httpType', :sha256 => 'httpSha256', :sha1 => 'httpSha1'}",
+        "scope": ".podspec"
+    },
+    "sourcePath": {
+        "prefix": "sourcePath",
+        "body": [
+            "source = :path => '${1:path}'\n"
+        ],
+        "description": "source = :path => 'path'",
+        "scope": ".podspec"
+    },
+    "summary": {
+        "prefix": "summary",
+        "body": [
+            "summary = '${1:summary}'\n"
+        ],
+        "description": "summary = 'summary'",
+        "scope": ".podspec"
+    },
+    "description": {
+        "prefix": "description",
+        "body": [
+            "summary = <<-DESC \n${1:description}\n DESC\n'"
+        ],
+        "description": "description = <<-DESC description DESC",
+        "scope": ".podspec"
+    },
+    "screenshot": {
+        "prefix": "screenshot",
+        "body": [
+            "screenshot = '${1:screenshot}'\n"
+        ],
+        "description": "screenshot = 'screenshot'",
+        "scope": ".podspec"
+    },
+    "screenshots": {
+        "prefix": "screenshots",
+        "body": [
+            "screenshots = [ '${1:screenshot}',\n            '${2:...}' ]\n'"
+        ],
+        "description": "screenshots = ['screenshot', '...']",
+        "scope": ".podspec"
+    },
+    "documentation_url": {
+        "prefix": "documentation_url",
+        "body": [
+            "documentation_url = '${1:documentation_url}'\n"
+        ],
+        "description": "documentation_url = 'documentation_url'",
+        "scope": ".podspec"
+    },
+    "prepare_command": {
+        "prefix": "prepare_command",
+        "body": [
+            "prepare_command = '${1:prepare_command}'\n"
+        ],
+        "description": "prepare_command = 'prepare_command'",
+        "scope": ".podspec"
+    },
+    "deprecatedTrue": {
+        "prefix": "deprecatedTrue",
+        "body": [
+            "deprecated = true\n"
+        ],
+        "description": "deprecated = true",
+        "scope": ".podspec"
+    },
+    "deprecatedFalse": {
+        "prefix": "deprecatedFalse",
+        "body": [
+            "deprecated = false\n"
+        ],
+        "description": "deprecated = false",
+        "scope": ".podspec"
+    },
+    "deprecated_in_favor_of": {
+        "prefix": "deprecated_in_favor_of",
+        "body": [
+            "deprecated_in_favor_of = '${1:deprecated_in_favor_of}'\n"
+        ],
+        "description": "deprecated_in_favor_of = 'deprecated_in_favor_of'",
+        "scope": ".podspec"
+    },
+    "ios": {
+        "prefix": "ios",
+        "body": [
+            "ios"
+        ],
+        "description": "ios",
+        "scope": ".podspec"
+    },
+    "platformIOS": {
+        "prefix": "platformIOS",
+        "body": [
+            "platform = :ios\n"
+        ],
+        "description": "platform = :ios",
+        "scope": ".podspec"
+    },
+    "platformIOSVersion": {
+        "prefix": "platformIOSVersion",
+        "body": [
+            "platform = :ios, '${1:version}'\n"
+        ],
+        "description": "platform = :ios, 'version'",
+        "scope": ".podspec"
+    },
+    "osx": {
+        "prefix": "osx",
+        "body": [
+            "osx"
+        ],
+        "description": "osx",
+        "scope": ".podspec"
+    },
+    "platformOSX": {
+        "prefix": "platformOSX",
+        "body": [
+            "platform = :osx\n"
+        ],
+        "description": "platform = :osx",
+        "scope": ".podspec"
+    },
+    "platformOSXVersion": {
+        "prefix": "platformOSXVersion",
+        "body": [
+            "platform = :osx, '${1:version}'\n"
+        ],
+        "description": "platform = :osx, 'version'",
+        "scope": ".podspec"
+    },
+    "tvos": {
+        "prefix": "tvos",
+        "body": [
+            "tvos"
+        ],
+        "description": "tvos",
+        "scope": ".podspec"
+    },
+    "platformTVOS": {
+        "prefix": "platformTVOS",
+        "body": [
+            "platform = :tvos\n"
+        ],
+        "description": "platform = :tvos",
+        "scope": ".podspec"
+    },
+    "platformTVOSVersion": {
+        "prefix": "platformTVOSVersion",
+        "body": [
+            "platform = :tvos, '${1:version}'\n"
+        ],
+        "description": "platform = :tvos, 'version'",
+        "scope": ".podspec"
+    },
+    "watchos": {
+        "prefix": "watchos",
+        "body": [
+            "watchos"
+        ],
+        "description": "watchos",
+        "scope": ".podspec"
+    },
+    "platformWATCHOS": {
+        "prefix": "platformWATCHOS",
+        "body": [
+            "platform = :watchos\n"
+        ],
+        "description": "platform = :watchos",
+        "scope": ".podspec"
+    },
+    "platformWATCHOSVersion": {
+        "prefix": "platformWATCHOSVersion",
+        "body": [
+            "platform = :watchos, '${1:version}'\n"
+        ],
+        "description": "platform = :watchos, 'version'",
+        "scope": ".podspec"
+    },
+    "deployment_target": {
+        "prefix": "deployment_target",
+        "body": [
+            "deployment_target = '${1:target}'\n"
+        ],
+        "description": "deployment_target = 'target'",
+        "scope": ".podspec"
+    },
+    "dependency": {
+        "prefix": "dependency",
+        "body": [
+            "dependency '${1:dependency}'\n"
+        ],
+        "description": "dependency 'dependency'",
+        "scope": ".podspec"
+    },
+    "dependencyVersion": {
+        "prefix": "dependencyVersion",
+        "body": [
+            "dependency '${1:dependency}', '~> ${2:version}'\n"
+        ],
+        "description": "dependency 'dependency', '~> version'",
+        "scope": ".podspec"
+    },
+    "requiresArcTrue": {
+        "prefix": "requiresArcTrue",
+        "body": [
+            "requires_arc = true\n"
+        ],
+        "description": "requires_arc = true",
+        "scope": ".podspec"
+    },
+    "requiresArcFalse": {
+        "prefix": "requiresArcFalse",
+        "body": [
+            "requires_arc = false\n"
+        ],
+        "description": "requires_arc = false",
+        "scope": ".podspec"
+    },
+    "requiresArcClass": {
+        "prefix": "requiresArcClass",
+        "body": [
+            "requires_arc = '${1:class}'\n"
+        ],
+        "description": "requires_arc = 'class'",
+        "scope": ".podspec"
+    },
+    "requiresArcClasses": {
+        "prefix": "requiresArcClasses",
+        "body": [
+            "requires_arc = ['${1:class}','${2:...}']\n"
+        ],
+        "description": "requires_arc = ['class','...']",
+        "scope": ".podspec"
+    },
+    "framework": {
+        "prefix": "framework",
+        "body": [
+            "framework = '${1:framework}'\n"
+        ],
+        "description": "framework = 'framework'",
+        "scope": ".podspec"
+    },
+    "frameworks": {
+        "prefix": "frameworks",
+        "body": [
+            "frameworks = '${1:framework}', '${2:...}'\n"
+        ],
+        "description": "frameworks = 'framework', '...'",
+        "scope": ".podspec"
+    },
+    "weak_framework": {
+        "prefix": "weak_framework",
+        "body": [
+            "weak_framework = '${1:weak_framework}'\n"
+        ],
+        "description": "weak_framework = 'weak_framework'",
+        "scope": ".podspec"
+    },
+    "library": {
+        "prefix": "library",
+        "body": [
+            "library = '${1:library}'\n"
+        ],
+        "description": "library = 'library'",
+        "scope": ".podspec"
+    },
+    "libraries": {
+        "prefix": "libraries",
+        "body": [
+            "libraries = '${1:librarie}', '${2:...}'\n"
+        ],
+        "description": "libraries = 'librarie', '...'",
+        "scope": ".podspec"
+    },
+    "compiler_flags": {
+        "prefix": "compiler_flags",
+        "body": [
+            "compiler_flags = '${1:compiler_flag}',  '${2:...}'\n"
+        ],
+        "description": "compiler_flags = 'compiler_flag', '...'",
+        "scope": ".podspec"
+    },
+    "pod_target_xcconfig": {
+        "prefix": "pod_target_xcconfig",
+        "body": [
+            "pod_target_xcconfig = {'${1:target}' => '${2:config}'}\n"
+        ],
+        "description": "pod_target_xcconfig = {'target' => 'config'}",
+        "scope": ".podspec"
+    },
+    "user_target_xcconfig": {
+        "prefix": "user_target_xcconfig",
+        "body": [
+            "user_target_xcconfig = {'${1:target}' => '${2:config}'}\n"
+        ],
+        "description": "user_target_xcconfig = {'target' => 'config'}",
+        "scope": ".podspec"
+    },
+    "prefix_header_contents": {
+        "prefix": "prefix_header_contents",
+        "body": [
+            "prefix_header_contents = '${1:prefix_header_contents}', '${2:...}'\n"
+        ],
+        "description": "prefix_header_contents = 'prefix_header_contents', '...'",
+        "scope": ".podspec"
+    },
+    "prefix_header_file": {
+        "prefix": "prefix_header_file",
+        "body": [
+            "prefix_header_file = '${1:prefix_header_file}'\n"
+        ],
+        "description": "prefix_header_file = 'prefix_header_file'",
+        "scope": ".podspec"
+    },
+    "module_name": {
+        "prefix": "module_name",
+        "body": [
+            "module_name = '${1:module_name}'\n"
+        ],
+        "description": "module_name = 'module_name'",
+        "scope": ".podspec"
+    },
+    "header_dir": {
+        "prefix": "header_dir",
+        "body": [
+            "header_dir = '${1:header_dir}'\n"
+        ],
+        "description": "header_dir = 'header_dir'",
+        "scope": ".podspec"
+    },
+    "header_mappings_dir": {
+        "prefix": "header_mappings_dir",
+        "body": [
+            "header_mappings_dir = '${1:header_mappings_dir}'\n"
+        ],
+        "description": "header_mappings_dir = 'header_mappings_dir'",
+        "scope": ".podspec"
+    },
+    "source_files": {
+        "prefix": "source_files",
+        "body": [
+            "source_files = '${1:source_files}', '${2:...}'\n"
+        ],
+        "description": "source_files = 'source_files', '...'",
+        "scope": ".podspec"
+    },
+    "public_header_files": {
+        "prefix": "public_header_files",
+        "body": [
+            "public_header_files = '${1:public_header_files}'\n"
+        ],
+        "description": "public_header_files = 'public_header_files'",
+        "scope": ".podspec"
+    },
+    "private_header_files": {
+        "prefix": "private_header_files",
+        "body": [
+            "private_header_files = '${1:private_header_files}'\n"
+        ],
+        "description": "private_header_files = 'private_header_files'",
+        "scope": ".podspec"
+    },
+    "vendored_frameworks": {
+        "prefix": "vendored_frameworks",
+        "body": [
+            "vendored_frameworks = '${1:vendored_frameworks}', '${2:...}'\n"
+        ],
+        "description": "vendored_frameworks = 'vendored_frameworks', '...'",
+        "scope": ".podspec"
+    },
+    "vendored_libraries": {
+        "prefix": "vendored_libraries",
+        "body": [
+            "vendored_libraries = '${1:vendored_libraries}', '${2:...}'\n"
+        ],
+        "description": "vendored_libraries = 'vendored_libraries', '...'",
+        "scope": ".podspec"
+    },
+    "resource_bundle": {
+        "prefix": "resource_bundle",
+        "body": [
+            "resource_bundle = { '${1:bundleName}' => '${2:bundleFilePath}' }\n"
+        ],
+        "description": "resource_bundle = {'bundleName' => 'bundleFilePath'}",
+        "scope": ".podspec"
+    },
+    "resource_bundles": {
+        "prefix": "resource_bundles",
+        "body": [
+            "resource_bundles = {\n    ${1:bundleName}' => ['${2:bundleFilePath}'],\n    ${3:...}' => ['${4:...}']\n}\n"
+        ],
+        "description": "resource_bundles = {'bundleName' => ['bundleFilePath'], '...' => ['...']}",
+        "scope": ".podspec"
+    },
+    "resource": {
+        "prefix": "resource",
+        "body": [
+            "resource = '${1:resource}'\n"
+        ],
+        "description": "resource = 'resource'",
+        "scope": ".podspec"
+    },
+    "resources": {
+        "prefix": "resources",
+        "body": [
+            "resources = ['${1:resources}', '${2:...}']\n"
+        ],
+        "description": "resources = ['resources', '...']",
+        "scope": ".podspec"
+    },
+    "exclude_files": {
+        "prefix": "exclude_files",
+        "body": [
+            "exclude_files = '${1:exclude_files}'\n"
+        ],
+        "description": "exclude_files = 'exclude_files'",
+        "scope": ".podspec"
+    },
+    "preserve_path": {
+        "prefix": "preserve_path",
+        "body": [
+            "preserve_path = '${1:preserve_path}'\n"
+        ],
+        "description": "preserve_path = 'preserve_path'",
+        "scope": ".podspec"
+    },
+    "module_map": {
+        "prefix": "module_map",
+        "body": [
+            "module_map = '${1:module_map}'\n"
+        ],
+        "description": "module_map = 'module_map'",
+        "scope": ".podspec"
+    },
+    "subspec": {
+        "prefix": "subspec",
+        "body": [
+            "subspec '${1:subspecFolderName}' do |${2:subspecName}|\n\t$0\nend"
+        ],
+        "description": "subspec 'subspecFolderName' do |subspecName| … end",
+        "scope": ".podspec"
+    },
+    "default_subspec": {
+        "prefix": "default_subspec",
+        "body": [
+            "default_subspec = '${1:default_subspec}'\n"
+        ],
+        "description": "default_subspec = 'default_subspec'",
+        "scope": ".podspec"
+    },
+    "default_subspecs": {
+        "prefix": "default_subspecs",
+        "body": [
+            "default_subspecs = '${1:default_subspecs}', '${2...}'\n"
+        ],
+        "description": "default_subspecs = 'default_subspecs', '...'",
+        "scope": ".podspec"
+    }
+}

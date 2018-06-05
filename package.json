@@ -1,0 +1,36 @@
+{
+    "name": "vscode-cocoapods-snippets",
+    "displayName": "VSCode-CocoaPods-Snippets",
+    "description": "A snippet extension for VSCode to set .podspec or .podfile files for CocoaPods.",
+    "version": "0.0.1",
+    "publisher": "Agenric",
+    "icon": "images/cocoapods.png",
+    "galleryBanner": {
+        "color": "#0273D4",
+        "theme": "dark"
+    },
+    "license": "SEE LICENSE IN LICENSE",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Agenric/VSCode-CocoaPods-Snippets.git"
+    },
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "ruby",
+                "path": "./snippets/podfile.json"
+            },
+            {
+                "language": "ruby",
+                "path": "./snippets/podspec.json"
+            }
+        ]
+    },
+    "keywords": ["Cocoapods", "Podfile", "podspec"]
+}
