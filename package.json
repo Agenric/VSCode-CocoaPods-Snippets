@@ -33,5 +33,18 @@
             }
         ]
     },
-    "keywords": ["Cocoapods", "Podfile", "podspec"]
+    "keywords": [
+        "Cocoapods",
+        "Podfile",
+        "podspec"
+    ],
+    "bugs": {
+        "url": "https://github.com/Agenric/VSCode-CocoaPods-Snippets/issues"
+    },
+    "homepage": "https://github.com/Agenric/VSCode-CocoaPods-Snippets",
+    "author": {
+        "name": "agenric(Agenric Won)",
+        "email": "agenricwon@gmail.com",
+        "url": "http://blog.agenric.cn"
+    }
 }
