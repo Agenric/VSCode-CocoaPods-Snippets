@@ -598,5 +598,13 @@
         ],
         "description": "default_subspecs = 'default_subspecs', '...'",
         "scope": ".podspec"
+    },
+    "swiftversion": {
+        "prefix": "swiftversion",
+        "body": [
+            "swift_version = '${1:version}'\n"
+        ],
+        "description": "swift_version = 'version'",
+        "scope": ".podspec"
     }
 }
