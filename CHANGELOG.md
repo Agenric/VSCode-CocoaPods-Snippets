@@ -11,3 +11,7 @@
 ## [0.0.3]
 
 - Replace icon image
+
+## [0.0.4]
+
+- Fix some error
