@@ -74,7 +74,7 @@
     "pod": {
         "prefix": "pod",
         "body": [
-            "pod '${1:Objection}', '~$2'"
+            "pod '${1:Objection}'"
         ],
         "description": "Pod 'Objection'",
         "scope": ".podfile"
@@ -154,7 +154,7 @@
     "podPodspec": {
         "prefix": "podPodspec",
         "body": [
-            "pod '${1:Objection}', ${2:podspec}\n"
+            "pod '${1:Objection}', '${2:podspec}'\n"
         ],
         "description": "pod 'Objection', podspec",
         "scope": ".podfile"
