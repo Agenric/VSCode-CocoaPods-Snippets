@@ -2,7 +2,7 @@
     "name": "cocoapods-snippets",
     "displayName": "CocoaPods Snippets",
     "description": "A snippet extension for VSCode to set .podspec or .podfile files for CocoaPods.",
-    "version": "0.0.5",
+    "version": "0.0.4",
     "publisher": "Agenric",
     "icon": "images/cocoapods.png",
     "galleryBanner": {
