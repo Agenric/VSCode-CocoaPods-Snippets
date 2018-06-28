@@ -15,3 +15,7 @@
 ## [0.0.4]
 
 - Fix some error
+
+## [0.0.5]
+
+- Change displayName
