@@ -530,7 +530,7 @@
     "resource_bundles": {
         "prefix": "resource_bundles",
         "body": [
-            "resource_bundles = {\n    ${1:bundleName}' => ['${2:bundleFilePath}'],\n    ${3:...}' => ['${4:...}']\n}\n"
+            "resource_bundles = {\n    '${1:bundleName}' => ['${2:bundleFilePath}'],\n    '${3:...}' => ['${4:...}']\n}\n"
         ],
         "description": "resource_bundles = {'bundleName' => ['bundleFilePath'], '...' => ['...']}",
         "scope": ".podspec"
