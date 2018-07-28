@@ -20,3 +20,7 @@
 
 - Change displayName
 - Ps: Actually，there are no substantive changes in these versions. Because my misuse caused version number confusion, I am an ODC. :joy:
+
+## [0.0.8]
+
+- Fix resource_bundles format
