@@ -594,7 +594,7 @@
     "default_subspecs": {
         "prefix": "default_subspecs",
         "body": [
-            "default_subspecs = '${1:default_subspecs}', '${2...}'\n"
+            "default_subspecs = '${1:default_subspecs}', '${2:...}'\n"
         ],
         "description": "default_subspecs = 'default_subspecs', '...'",
         "scope": ".podspec"

@@ -24,3 +24,7 @@
 ## [0.0.8]
 
 - Fix resource_bundles format
+
+## [1.0.0]
+
+- Fix default_subspecs format
